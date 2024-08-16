@@ -1,0 +1,49 @@
+{% include 'helper/header.html' %}
+{% include 'helper/cssfile.html' %}
+
+<style>
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-color: #f8f9fa;
+    }
+
+    .profile-card {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .profile-card h2 {
+        font-size: 28px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    .profile-card p {
+        font-size: 18px;
+        color: #555555;
+        margin: 8px 0;
+    }
+</style>
+
+<div class="profile-container">
+    <div class="profile-card">
+        {% if user.is_authenticated %}
+            <h2>{{ user.username }}</h2>
+            <!-- <p>Email: {{ user_profile.email }}</p>
+            <p>Role: {{ user_profile.role }}</p>
+            <p>Phone: {{ user_profile.phone_number }}</p> -->
+        {% else %}
+            <h2>Guest User</h2>
+        {% endif %}
+    </div>
+</div>
+
+{% include 'helper/footer.html' %}
