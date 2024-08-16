@@ -28,19 +28,5 @@ The project showcases various features such as user authentication, product mana
 - **HTML:** Provides the structure of the web pages.
 - **CSS:** Adds styling and layouts to the application.
 
-## Screenshots
 
-Here are some screenshots of the website:
-
-### Homepage
-
-![Homepage](1.png)
-
-### Product Page
-
-![Product Page](2.png)
-
-### Orders
-
-![Orders](3.png)
 
